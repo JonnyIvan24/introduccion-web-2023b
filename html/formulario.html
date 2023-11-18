@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="./accion.html" method="get">
+        <fieldset>
+            <legend>Crear usuario</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" value="Johnny"><br>
+
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" name="apellido" id="apellido" placeholder="Uribe"><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" min="18" max="30" step="2"><br>
+
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10">
+                alguna descripción
+            </textarea><br>
+
+            <select name="carro" id="carro">
+                <option value="">Selecciona tu carro...</option>
+                <option value="1">Ford</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+            </select><br>
+
+            <p>Seleccione un genero:</p>
+            <input type="radio" id="hombre" name="genero" value="hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="genero" value="mujer">
+            <label for="mujer">Mujer</label><br>
+
+            <p>Indica que vehiculo tienes:</p>
+            <input type="checkbox" name="vehiculo" id="vehiculo1" value="bici">
+            <label for="vehiculo1"> Tengo bicicleta</label><br>
+            <input type="checkbox" name="vehiculo" id="vehiculo2" value="carro">
+            <label for="vehiculo1"> Tengo carro</label><br>
+            <input type="checkbox" name="vehiculo" id="vehiculo3" value="bote">
+            <label for="vehiculo1"> Tengo bote</label><br>
+
+            <br>
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Deshacer">
+        </fieldset>    
+    </form>
+    <div>
+        <button type="button" onclick="alert('Hola Walter')">Da clic!</button>
+    </div>
+</body>
+</html>
