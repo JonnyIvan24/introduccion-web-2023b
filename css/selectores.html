@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        /* jerarquía 1 */
+        p, h3 {
+            text-align: center;
+            color: red;
+        }
+
+        /* jerarquía 2 */
+        .center {
+            text-align: center;
+            color: red;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        p.right {
+            font-size: 5px;
+        }
+
+        /* jerarquía 3 */
+        #para1 {
+            text-align: right;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola 1</p>
+    <p id="para1">Hola 2</p>
+    <h3>Hola 3</h3>
+    <h3 class="right">Hola 4</h3>
+    <p class="right">Hola 5</p>
+</body>
+</html>
