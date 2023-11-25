@@ -9,12 +9,17 @@
             width: 50%;
             height: 200px;
             background-color: red;
-            cursor: help;
         }
 
         #no-visible {
             visibility: hidden;
             /* display: none; este atributo no ocupa espacio */
+        }
+
+        #box {
+            margin: 5px; /* separación respecto a los elementos externos */
+            border: 2px red solid; /* la línea frontera del elemento */
+            padding: 10px; /* separación en el contenido del elemento */
         }
     </style>
 </head>
@@ -25,5 +30,8 @@
     <h2>Visible</h2>
     <h2 id="no-visible">No visible</h2>
     <p>Nota: los elementos ocultos siguen ocupando espacio</p>
+
+    <p id="box">Hola</div>
+    <div></div>
 </body>
 </html>
