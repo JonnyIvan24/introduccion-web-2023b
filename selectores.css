@@ -1,0 +1,25 @@
+ /* jerarquía 1 */
+ p, h3 {
+    text-align: center;
+    color: red;
+}
+
+/* jerarquía 2 */
+.center {
+    text-align: center;
+    color: red;
+}
+
+.right {
+    text-align: right;
+}
+
+p.right {
+    font-size: 5px;
+}
+
+/* jerarquía 3 */
+#para1 {
+    text-align: right;
+    color: blue;
+}
