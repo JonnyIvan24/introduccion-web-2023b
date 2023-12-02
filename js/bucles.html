@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        for (let paso = 0; paso < 6; paso++) {
+            if (paso === 1) { // === es una condición explicita
+                continue // también podemos utilzar break
+            }
+            console.log('Paso: ' + paso)          
+        }
+
+        var n = 0
+        while (n < 3) {
+            console.log(n++)
+        }
+
+        do {
+            console.log(n++)
+        } while (n < 0);
+    </script>
+</body>
+</html>

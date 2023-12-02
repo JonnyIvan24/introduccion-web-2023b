@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterador</title>
+</head>
+<body>
+    <script>
+        var numeros = [45, 15, 0, 1, 5, 100]
+        // el unico parámetro requerido en el foreach es el primero los demás son opcionales
+        numeros.forEach((numero, indice, original) => {
+            console.log(original)
+            console.log('Indice: ' + indice)
+            console.log('Valor: ' + numero)
+        })
+    </script>
+</body>
+</html>
