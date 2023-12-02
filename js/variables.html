@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        // string
+        var x = "5"
+        var y = "3.2"
+        document.write(x + y + " " + typeof(x + y))
+        document.write("<br>")
+        document.write(x * y + " " + typeof(x * y))
+
+        // number
+        var a, b
+        a = 4
+        b = 2
+        console.log(a + b)
+        console.log(a % b)
+        console.log(1 + a++) //aumenta el valor de a + 1 despúes de la ejecución de la línea
+        console.log(2 + ++b) //aumenta el valor de b + 1 en la ejecucíon de la línea
+
+        // boolean
+        var c = true
+        var d = false
+        console.log(c == d)
+        console.log(c != d)
+        console.log(a != b)
+
+        // listas
+        var nombre = "Ana"
+        var miLista = ["pera", 33, nombre, true, , "barcelona"]
+        console.log(miLista)
+        console.log(miLista[4])
+        console.log(miLista[b])
+        console.log(miLista[miLista.length-1])
+
+        // objetos
+        var persona = {
+            nombre: "Juan",
+            apellido: "Uribe",
+            aficiones: ["css", "html", "javascript"],
+            inscrito: true
+        }
+        console.log(persona)
+        console.log(persona.nombre)
+        console.log(persona.aficiones[1])
+    </script>
+</body>
+</html>
