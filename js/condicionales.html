@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        var edad = Number(prompt('Intoduce tu edad'))
+        console.log(edad)
+        if (edad >= 0 && edad < 20) {
+            alert("Eres menor de 20 años")
+        } else if (edad >= 20 && edad <= 40) {
+            alert("Tienes entre 20 y 40 años")
+        } else {
+            alert("Eres mayor de 40 años")
+        }
+
+        var text = ""
+        var dia = new Date().getDay()
+        switch (dia) {
+            case 6:
+                text = "Hoy es sábado"
+                break;
+            case 0:
+                text = "Hoy es domingo"
+                break;
+
+            default:
+                text = "Es un día entre semana"
+                break;
+        }
+        console.log(text);
+    </script>
+</body>
+</html>
