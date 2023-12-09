@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <input type="text" id="1">
+    <p>Algún texto</p>
+    <h3 name="h">Encabezado 3</h3>
+    <h2 class="clase">Encabezado 2.0</h2>
+    <h2 class="clase">Encabezado 2.1</h2>
+
+    <script>
+        var input1 = document.getElementById('1')
+        input1.value = 1
+        var p = document.getElementsByTagName('p')
+        var h = document.getElementsByName('h')
+        var clase = document.getElementsByClassName('clase')
+        clase[0].innerHTML = "texto insertado con js"
+
+        console.log(p)
+        console.log(h)
+        console.log(clase[0].innerHTML)
+        console.log(input1)
+    </script>
+</body>
+</html>
